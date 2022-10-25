@@ -1,0 +1,25 @@
+uses crt;
+var
+waktu,nama:string;
+begin
+clrscr;
+    write('Masukkan nama    : ');readln(nama);
+    write('Masukkan waktu   : ');readln(waktu);
+    if ((waktu = 'pagi') or (waktu = 'siang') or (waktu = 'malam')) then 
+    begin 
+       writeln('S');
+       writeln('E');
+       writeln('L');
+       writeln('A');
+       writeln('M');
+       writeln('A');
+       writeln('T');
+       writeln(waktu);
+       writeln(nama); 
+    end
+    else
+    begin
+        writeln('Waktu yang Anda Masukkan salah [pagi/siang/malam]');
+    end;
+readln;
+end.

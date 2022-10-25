@@ -1,0 +1,42 @@
+uses crt;
+var
+i,j,n,m,k,spasi,star:integer;
+begin
+clrscr;
+write('Nilai = '); readln(n);
+star:=1;
+m:=n;
+for i:=1 to n do
+begin
+    for j:=1 to n-1 do
+    begin
+        write(' ');
+    end;
+    for k:=1 to star do
+    begin
+        write('* ');
+    end;
+    star:=star+1;
+    n:=n-1;    
+    writeln;
+end;
+
+star:=star-2;
+spasi:=1;
+for i:=1 to m-1 do
+begin
+    for j:=1 to spasi do 
+    begin
+        write(' ');
+    end;
+    for k:=1 to star do 
+    begin
+        write('* ');
+    end;
+    writeln;
+    star:=star-1;
+    spasi:=spasi+1;
+    m:=m-1;
+end; 
+readln;
+end.
